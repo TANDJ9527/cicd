@@ -7,7 +7,7 @@
 class Calculator:
     """简单计算器类，提供基本数学运算"""
 
-    def modulo(self, a: float, b: float) -> float:
+    def modulo1(self, a: float, b: float) -> float:
         """取模运算"""
         if b == 0:
             raise ValueError("除数不能为0")
