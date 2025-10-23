@@ -63,11 +63,13 @@ class TestCalculator:
         """测试对负数求平方根的异常"""
         with pytest.raises(ValueError, match="不能对负数求平方根"):
             self.calc.square_root(-1)
+
     def test_modulo(self):
         """测试取模运算"""
         assert self.calc.modulo1(10, 3) == 1
         assert self.calc.modulo1(7, 2) == 1
         assert self.calc.modulo1(15, 4) == 3
+
     def test_modulo_by_zero(self):
         """测试模零异常"""
         with pytest.raises(ValueError, match="除数不能为0"):
