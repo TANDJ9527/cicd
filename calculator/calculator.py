@@ -100,5 +100,16 @@ class Calculator:
             raise ValueError("不能对负数求平方根")
         return n**0.5
 
+    def factorial(self, n: int) -> int:
+        """计算阶乘"""
+        if n < 0:
+            raise ValueError("不能对负数求阶乘")
+        if n == 0 or n == 1:
+            return 1
+        result = 1
+        for i in range(2, n + 1):
+            result *= i
+        return result
+
 
 # 测试tag
