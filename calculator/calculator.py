@@ -53,21 +53,7 @@ class Calculator:
         return a * b
 
     def divide(self, a: float, b: float) -> float:
-        """
-        除法运算
-
-        Args:
-            a: 被除数
-            b: 除数
-
-        Returns:
-            商
-
-        Raises:
-            ValueError: 当除数为0时
-        """
-        if b == 0:
-            raise ValueError("除数不能为0")
+        
         return a / b
 
     def power(self, base: float, exponent: float) -> float:
